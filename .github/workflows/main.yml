@@ -1,0 +1,12 @@
+name: Testing Actions
+
+on:
+  push:
+  
+jobs:
+  build_and_test:
+    runs-on: ubuntu_latest
+    steps:
+      - shell: bash
+        run: |
+          echo "${{ github }}"
